@@ -1,8 +1,7 @@
+<!--Same on each page-->
 <!DOCTYPE html>
 <html lang="en-us">
 
-
-<!--Same on each page-->
 <head>
   <meta charset="UTF-8">
   <title>Portfolio - Samantha Orcutt</title>
@@ -10,24 +9,32 @@
 </head>
 
 <body>
+
 <div class="wrapper">
-  <div id="header"></div>
+
+  <header>
     <div id="header_text">
       <h1>Samantha Orcutt</h1>
-  
-      <p class="menu" id="contact">
-        <a href="contact.html">Contact</a>
-      </p>
-      <p class="menu" id="portfolio">
-        <a href="portfolio.html">Portfolio</a>
-      </p>
-      <p class="menu" id="about">
-          <a href="index.html">About</a>
-      </p>
+
+      <nav>
+        <ul>
+          <li id="about">
+            <a href="index.html" >About</a>
+          </li>
+          <li id="portfolio">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li id="contact">
+            <a href="contact.html" class="active">Contact</a>
+          </li>
+      
+      
+        </ul>
+      </nav>
   </div>
+</header>
 
-
- <div id="content_container">
+  <div id="content_container">
 <!--Unique to Contact--> 
 
     <h2>Contact</h2>
@@ -48,11 +55,15 @@
         </form>
           
 <!--Same on each page-->
+</div>
+  
+<div class="push"></div>
 
 </div>
-<div class="push"></div>
-</div>
-<footer class="footer" id="copyright">Copyright &copy</footer>
+<footer class="footer">
+  <section id="copyright">Copyright &copy</section>
+</footer>
 
   
 </body>
+</html>
