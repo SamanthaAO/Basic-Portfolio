@@ -1,4 +1,4 @@
-/* same on each page */
+
 
 html, body {
     
@@ -14,26 +14,30 @@ header {
     height: 100px;
     width: 100%;
     background-color: #ffffff;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid #777777;
     clear: both;
 }
 
-
+/*box for name and nav to keep itt at 960*/
 #header_text {
     width: 960px;
     margin: 0 auto;
 }
 
+/*Name text on the left*/
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif; 
     float: left;
     padding: 1em;
     margin: 0;
     color: #ffffff;
+    -webkit-text-stroke: 1px #777777;
     background-color: #4aaaa5;
-    
+    border-left: 1px solid #777777;
+    border-right: 1px solid #777777;  
 }
 
+/*nav on the right*/
 nav {
     float: right;
     margin: 2rem 0 2rem 0; 
@@ -49,7 +53,6 @@ a:hover {
 
 nav li {display: inline;
     padding: 0em 1em 0em 1em;
-    
 }
 
 #portfolio {
@@ -61,15 +64,6 @@ nav li {display: inline;
     color: #C14A4A;
 }
 
-/* footer */
-
-#copyright {
-    color: #dddddd;
-    font-size: 10px;
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-}
 
 /* center container */
 
@@ -82,7 +76,8 @@ nav li {display: inline;
     background-color: #ffffff;
     border: 1px solid #dddddd;
     overflow: auto;
-
+    border: 1px solid #777777;
+    box-shadow: 3px 3px 3px 1px #dddddd;
 }
 
 
@@ -90,6 +85,7 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif; 
     color: #4aaaa5;
     text-align: left;
+    -webkit-text-stroke: 1px #777777;
     padding: 0 1em 1em 0em;
     border-bottom-style: solid;
     border-color: #dddddd;
@@ -102,6 +98,8 @@ h2 {
     width: 25%;
     float: left;
     margin: 2em;
+    border: 1px solid #777777;
+    box-shadow: 3px 3px 3px #dddddd;
     
 }
 
@@ -144,7 +142,6 @@ input {
     float: left;
     margin: 1em;
     position: relative;
-
 }
 
 
@@ -165,7 +162,17 @@ input {
 
 }
     
+/* footer */
 
+#copyright {
+    color: #dddddd;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+
+/* sticky footer*/
   .wrapper {
     min-height: 100%;
   
@@ -173,7 +180,7 @@ input {
     /* But also accounting for potential margin-bottom of last child */
     margin-bottom: -65px;
   }
-  .footer{
+  footer {
     width: 100%;
     height: 65px;
     position: relative;
